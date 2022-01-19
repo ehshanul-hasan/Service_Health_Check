@@ -28,6 +28,8 @@ if (app.Environment.IsDevelopment())
 app.UseAuthorization();
 
 app.MapControllers();
+
+// health check endpoint config
 app.MapHealthChecks("/hc", new HealthCheckOptions()
 {
     Predicate = _ => true,
