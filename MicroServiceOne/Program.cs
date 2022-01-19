@@ -29,7 +29,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-// health check endpoint config
+// health check endpoint config test
 app.MapHealthChecks("/hc", new HealthCheckOptions()
 {
     Predicate = _ => true,
